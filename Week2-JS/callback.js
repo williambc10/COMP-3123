@@ -1,3 +1,4 @@
+//Declaring
 var add = function (a, b) {
     return a+b;
 }
@@ -25,7 +26,7 @@ console.log(result3);
 console.log(result4);
 console.log(result5);
 
-//Promises
+//Callback - setInterval
 //First method
 var print = function () {
     console.log("Hello");
