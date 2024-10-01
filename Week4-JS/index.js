@@ -1,35 +1,3 @@
-/*const express = require('express');
-const app = express();
-const SERVER_PORT = 3000
-
-app.get('/', (req, res) => {
-    res.send('<h1>Hello World</h1>');
-});
-
-app.get('/about', (req, res) => {
-    res.send('<h1>About us</h1>');
-});
-
-app.get('/contact', (req, res) => {
-    res.send('<h1>Contact us</h1>');
-});
-
-app.post('/hello', (req, res) => {     //Browser only allows GET method, Postman will allow POST & GET
-    res.send('<h1>POST - Hello World</h1>');
-});
-
-app.put('/hello', (req, res) => {     //Browser only allows GET method, Postman will allow PUT
-    res.send('<h1>PUT - Hello World</h1>');
-});
-
-app.delete('/hello', (req, res) => {     //Browser only allows GET method, Postman will allow DELETE
-    res.send('<h1>DELETE - Hello World</h1>');
-});
-
-app.listen(SERVER_PORT, () => {
-    console.log(`Server is running on http://localhost:3000`)
-})*/
-
 const express = require('express');
 const app = express();
 const SERVER_PORT = 3000
