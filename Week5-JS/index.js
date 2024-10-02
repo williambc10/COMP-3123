@@ -7,7 +7,7 @@ const SERVER_PORT = process.env.PORT || 3030; //process.env.PORT allows develope
 
 //use() is used to access the middleware
 app.use(express.json()); //allows json bodies to be posted to the server to allow get requests of the json bodies
-app.use(express.urlencoded({extended: true})); //*?
+app.use(express.urlencoded({extended: true})); //convert data in the body form 
 
 const loggerMiddleware = (req, res, next) => { // it sends the url and the request method plus the date in the terminal for this specific loggerMiddleware*?
     console.log(`Logged ${req.url} ${req.method} -- ${new Date()}`); //*?
@@ -20,8 +20,8 @@ app.use('/user', loggerMiddleware); //will only log what is in the url that incl
 
 app.use(empRouter);
 app.use(userRouter);
-app.use('/user', userRouter);
-app.use('/employee', empRouter);
+//app.use('/user', userRouter);
+//app.use('/employee', empRouter);
 
 //Error endpoint
 // http://localhost:3030/error
@@ -38,8 +38,8 @@ app.listen(SERVER_PORT, () => {
 });
 
 /*
-    1) requests come first
-    2) then middleware
+    1) application middleware
+    2) requests come later
     3) then api endpoints
     4) then errors *?
  */
