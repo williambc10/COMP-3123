@@ -1,0 +1,81 @@
+.container {
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    background-color: lightgreen;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.card {
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: turquoise;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    color: black;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.profile-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.details-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.info-section {
+    text-align: left;
+    width: 100%;
+}
+
+.info-section p {
+    margin: 5px 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
